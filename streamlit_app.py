@@ -4,7 +4,7 @@ st.title("🎈 Saint Chongers Life")
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    toggle1 = st.toggle("Happiness", disabled=not toggle6)
+    toggle1 = st.toggle("Happiness")
     toggle2 = st.toggle("Giving")
 with col2:
     toggle3 = st.toggle("Optimism")
