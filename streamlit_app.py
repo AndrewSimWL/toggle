@@ -14,5 +14,6 @@ with col2:
 with col3:
     toggle5 = st.toggle("Kindness", disabled=disable)
     toggle6 = st.toggle("Ego")
-    if toggle6:
-        disable=False
+    
+if toggle6:
+    $disable=False
