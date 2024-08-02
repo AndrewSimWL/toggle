@@ -1,20 +1,19 @@
 import streamlit as st
 
-backgroundColor = '#273346'
+# Define the state of the sixth toggle
+toggle6 = st.checkbox('Toggle 6')
 
-st.title("🎈 Saint Chongers Life")
-toggle6_unlock = True
+# Define the first five toggles and disable them if the sixth toggle is not enabled
+toggle1 = st.checkbox('Toggle 1', disabled=not toggle6)
+toggle2 = st.checkbox('Toggle 2', disabled=not toggle6)
+toggle3 = st.checkbox('Toggle 3', disabled=not toggle6)
+toggle4 = st.checkbox('Toggle 4', disabled=not toggle6)
+toggle5 = st.checkbox('Toggle 5', disabled=not toggle6)
 
-col1, col2, col3 = st.columns(3)
-with col1:
-    toggle1 = st.toggle("Happiness", disabled=toggle6_unlock)
-    toggle2 = st.toggle("Giving")
-with col2:
-    toggle3 = st.toggle("Optimism")
-    toggle4 = st.toggle("Respect")
-with col3:
-    toggle5 = st.toggle("Kindness")
-    toggle6 = st.toggle("Ego")
-
-if toggle6:
-    toggle6_unlock = False
+# Display the states of all toggles for debugging
+st.write("Toggle 6:", toggle6)
+st.write("Toggle 1:", toggle1)
+st.write("Toggle 2:", toggle2)
+st.write("Toggle 3:", toggle3)
+st.write("Toggle 4:", toggle4)
+st.write("Toggle 5:", toggle5)
