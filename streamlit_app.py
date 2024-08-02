@@ -3,6 +3,7 @@ import streamlit as st
 backgroundColor = '#273346'
 
 st.title("🎈 Saint Chongers Life")
+ego_unlock = False
 
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -13,6 +14,4 @@ with col2:
     respect = st.toggle("Respect")
 with col3:
     kindness = st.toggle("Kindness")
-    ego = st.toggle("Ego")
-    if happiness:
-        ego = st.toggle("Ego", disabled=True)
+    ego = st.toggle("Ego", disabled=ego_unlock)
