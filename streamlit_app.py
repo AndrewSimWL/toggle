@@ -4,6 +4,8 @@ backgroundColor = '#273346'
 
 st.title("🎈 Saint Chongers Life")
 ego_unlock = False
+if happiness:
+    ego_unlock = True
 
 col1, col2, col3 = st.columns(3)
 with col1:
