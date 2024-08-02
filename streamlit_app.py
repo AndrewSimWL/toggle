@@ -3,7 +3,8 @@ import streamlit as st
 
 st.title("🎈 Saint Chongers Life")
 
-st.session_state.disabled = True
+if 't6' not in st.session_state:
+    st.session_state.disabled = True
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -14,7 +15,7 @@ with col2:
     toggle4 = st.toggle("Respect", disabled=st.session_state.disabled)
 with col3:
     toggle5 = st.toggle("Kindness", disabled=st.session_state.disabled)
-    toggle6 = st.toggle("Ego")
+    toggle6 = st.toggle("Ego", key="t6")
 
 if toggle6:
     st.session_state.disabled = False
