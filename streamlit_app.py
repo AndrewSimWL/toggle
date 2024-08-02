@@ -15,7 +15,7 @@ with col2:
 with col3:
     kindness = st.toggle("Kindness")
 
-ego_unlock = if not (happiness and giving and optimism and respect and kindness)
+ego_unlock = not(happiness and giving and optimism and respect and kindness)
 
 with col3:
     ego = st.toggle("Ego", disabled=ego_unlock)
