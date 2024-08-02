@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("🎈 Saint Chongers Life")
 
-if 't6' not in st.session_state:
+if st.session_state.get("t6", False):
     st.session_state.disabled = True
 col1, col2, col3 = st.columns(3)
 
