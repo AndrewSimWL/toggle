@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("🎈 Saint Chongers Life")
 
-if st.session_state.get("t6", False):
+if st.session_state.get("t6", True):
     st.session_state.disabled = True
 elif st.session_state.get("t6", False):
     st.session_state.disabled = False
