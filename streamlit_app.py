@@ -5,6 +5,8 @@ st.title("🎈 Saint Chongers Life")
 
 if st.session_state.get("t6", False):
     st.session_state.disabled = True
+elif st.session_state.get("t6", False):
+    st.session_state.disabled = False
 col1, col2, col3 = st.columns(3)
 
 with col1:
