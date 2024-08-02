@@ -16,4 +16,4 @@ with col3:
     toggle6 = st.toggle("Ego")
     
 if toggle6:
-    $disable=False
+    disable=False
