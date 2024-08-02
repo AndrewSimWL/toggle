@@ -13,5 +13,5 @@ with col2:
     respect = st.toggle("Respect")
 with col3:
     kindness = st.toggle("Kindness")
-    if happinness:
+    if happiness:
         ego = st.toggle("Ego")
