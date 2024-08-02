@@ -13,13 +13,7 @@ with col1:
     giving = st.toggle("Giving")
 with col2:
     optimism = st.toggle("Optimism")
+    respect = st.toggle("Respect")
 with col3:
     kindness = st.toggle("Kindness")
-    
-col4, cold5, col6 = st.column(3)
-with col4:
-    giving = st.toggle("Giving")
-with col5:
-    respect = st.toggle("Respect")
-with col6:
     ego = st.toggle("Ego")
