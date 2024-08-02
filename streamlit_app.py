@@ -2,10 +2,7 @@ import streamlit as st
 
 backgroundColor = '#273346'
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("🎈 Saint Chongers Life")
 
 col1, col2, col3 = st.columns(3)
 with col1:
