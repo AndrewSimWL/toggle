@@ -13,4 +13,4 @@ with col2:
     respect = st.toggle("Respect")
 with col3:
     kindness = st.toggle("Kindness")
-    ego = st.toggle("Ego", disblaed=True)
+    ego = st.toggle("Ego", disabled=True)
