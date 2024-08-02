@@ -17,13 +17,6 @@ else:
 # Display the state of the sixth toggle
 st.write("Toggle 6:", toggle6)
 
-# Display the states of the first five toggles for debugging
-if toggle6:
-    st.write("Toggle 1:", toggle1)
-    st.write("Toggle 2:", toggle2)
-    st.write("Toggle 3:", toggle3)
-    st.write("Toggle 4:", toggle4)
-    st.write("Toggle 5:", toggle5)
 '''
 backgroundColor = '#273346'
 
