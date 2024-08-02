@@ -11,4 +11,4 @@ with col2:
     toggle4 = st.toggle("Respect")
 with col3:
     toggle5 = st.toggle("Kindness")
-    toggle6 = st.toggle("Ego", disabled=toggle1)
+    toggle6 = st.toggle("Ego")
