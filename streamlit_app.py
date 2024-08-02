@@ -1,9 +1,12 @@
+
 import streamlit as st
 
 st.title("🎈 Saint Chongers Life")
 
 col1, col2, col3 = st.columns(3)
 disable = True
+if toggle6:
+    disable=False
 
 with col1:
     toggle1 = st.toggle("Happiness", disabled=disable)
