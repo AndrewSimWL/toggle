@@ -18,6 +18,3 @@ with col2:
 with col3:
     toggle5 = st.toggle("Kindness", disabled=st.session_state.get("disabled", True))
     toggle6 = st.toggle("Ego", key="t6")
-
-if toggle6:
-    st.session_state.disabled = False
